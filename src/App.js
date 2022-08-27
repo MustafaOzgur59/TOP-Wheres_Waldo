@@ -3,15 +3,16 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Nav from "./Components/Nav";
 import About from "./Components/About";
 import Footer from "./Components/Footer";
+import Home from "./Components/Home";
 import styled from "styled-components";
 function App() {
   return (
     <AppWrapper>
-      <Router basename="/photo-tagging-app">
+      <Router>
         <Nav />
         <Routes>
-          {/* <Route path="/" element={<Home />} />
-        <Route path="/leaderboard" element={<Scores />} /> */}
+          <Route path="/" element={<Home />} />
+          {/* <Route path="/scores" element={<Scores />} /> */}
           <Route path="/about" element={<About />} />
           {/* <Route path="/:id" element={<Game />} /> */}
         </Routes>

@@ -13,7 +13,7 @@ const Nav = () => {
         <h3>About</h3>
       </StyledLink>
       <StyledLink to={"/leaderboard"}>
-        <h3>Leaderboard</h3>
+        <h3>Scores</h3>
       </StyledLink>
     </NavWrapper>
   );
