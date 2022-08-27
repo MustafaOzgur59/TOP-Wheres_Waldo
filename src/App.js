@@ -4,6 +4,7 @@ import Nav from "./Components/Nav";
 import About from "./Components/About";
 import Footer from "./Components/Footer";
 import Home from "./Components/Home";
+import Level from "./Components/Level";
 import styled from "styled-components";
 function App() {
   return (
@@ -14,7 +15,7 @@ function App() {
           <Route path="/" element={<Home />} />
           {/* <Route path="/scores" element={<Scores />} /> */}
           <Route path="/about" element={<About />} />
-          {/* <Route path="/:id" element={<Game />} /> */}
+          <Route path="/:id" element={<Level />} />
         </Routes>
         <Footer />
       </Router>

@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 
 const LevelSelect = ({ levels }) => {
   return (
@@ -8,7 +9,9 @@ const LevelSelect = ({ levels }) => {
         return (
           <LevelWrapper key={level.name}>
             <h3>{level.name}</h3>
-            <StyledImage src={level.src} alt="levelImage" />
+            <Link to={`/${level.name}`}>
+              <StyledImage src={level.src} alt="levelImage" />
+            </Link>
           </LevelWrapper>
         );
       })}
@@ -23,6 +26,7 @@ const Wrapper = styled.div`
   align-items: center;
   justify-content: space-around;
   padding: 1rem;
+  overflow-x: hidden;
 `;
 
 const LevelWrapper = styled.div`
@@ -32,6 +36,10 @@ const LevelWrapper = styled.div`
   align-items: center;
   justify-content: center;
   gap: 2rem;
+  transition: transform 500ms ease-in-out;
+  &:hover {
+    transform: scale(1.2);
+  }
 `;
 
 const StyledImage = styled.img`
