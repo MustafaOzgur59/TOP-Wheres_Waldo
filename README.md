@@ -3,7 +3,7 @@
 Where's Waldo
 
 How fast can you find Waldo and friends?
-[Play here!](https://mustafaozgur59.github.io/Top-Pokemon_Memory_game/) :point_left:
+[Play here!](https://mustafaozgur59.github.io/TOP-Wheres_Waldo/) :point_left:
 
 ### Summary
 
