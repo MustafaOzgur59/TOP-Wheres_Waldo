@@ -159,7 +159,7 @@ const Level = () => {
 
   if (gameOver) {
     const elapsedTime = new Date() - startTimer;
-    return <LevelOver gameboard={level} time={elapsedTime} />;
+    return <LevelOver level={level} time={elapsedTime} />;
   }
 
   if (level === "Level 1")
@@ -195,7 +195,7 @@ const Level = () => {
           top={location[0]}
           left={location[1]}
           coordinates={clickCoordinates}
-          selections={levelOneSelections}
+          selections={levelTwoSelections}
           onClickHandler={checkMatch}
           setShown={setShown}
           shown={shown}
@@ -215,7 +215,7 @@ const Level = () => {
           top={location[0]}
           left={location[1]}
           coordinates={clickCoordinates}
-          selections={levelOneSelections}
+          selections={levelThreeSelections}
           onClickHandler={checkMatch}
           setShown={setShown}
           shown={shown}
