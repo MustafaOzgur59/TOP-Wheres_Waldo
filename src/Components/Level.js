@@ -143,8 +143,16 @@ const Level = () => {
       clickCoordinates[1] - levelCoordinates[index].data.y < 2
     ) {
       console.log("match");
-      setLevelItemsFound((state) => [...state, levelCoordinates[index].id]);
-      console.log(`${levelCoordinates[index].id} found`);
+      if (
+        !levelItemsFound.find(
+          (element) => element === levelCoordinates[index].id
+        )
+      ) {
+        setLevelItemsFound((state) => [...state, levelCoordinates[index].id]);
+        console.log(`${levelCoordinates[index].id} found`);
+      } else {
+        console.log("Already found");
+      }
     } else {
       console.log("not match");
     }
